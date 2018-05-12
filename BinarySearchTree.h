@@ -13,12 +13,16 @@ struct Element {
                                                 value(1) {}
     // слово
     std::string key;
+
     // количество вхождений
     int value;
+
     // указатель на родителя (null - начальный элемент)
     Element *parent;
+
     // указатель на левый поток (соответствует 0) null - пусто
     Element *left;
+
     // указатель на правый поток (соответствует 1)
     Element *right;
 };
@@ -34,8 +38,7 @@ public:
 
     // оператор перемещения (rvalue-ссылка на экземпляр этого же класса)
     BinarySearchTree &operator=(BinarySearchTree &&other);
-
-
+	
     // поиск слова в словаре (возвращает количество вхождений (0 - если данного слова нет))
     int find(std::string key);
 

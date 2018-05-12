@@ -17,7 +17,7 @@ int main() {
 	tree.add("seven");
 	tree.add("eight");
 	tree.add("nine");
-
+	
 	std::cout << "\n" << tree << "\n";
 
 	std::cout << "find(eleven) - " << tree.find("eleven") << "\n";
@@ -25,13 +25,18 @@ int main() {
 
 	std::cout << "countAll() -  " << tree.countAll() << "\n";
 
+	BinarySearchTree tree2;
+	tree2 = tree;
+
 	std::cout << "\n";
 	tree.del("seven");
-	tree.del("one");
-	tree.del("six");
+	//tree.del("one");
+	//tree.del("six");
 	std::cout << "del(seven) " << tree << "\n";
 
 	std::cout << "countAll() -  " << tree.countAll() << "\n";
+
+	std::cout << "\nBinarySearchTree2\n" << tree2 << "\n";
 
 	std::cin.get();
 	return 0;
