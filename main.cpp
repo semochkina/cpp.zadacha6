@@ -6,28 +6,30 @@ int main() {
 	std::cout << "\nBinarySearchTree\n";
 
 	BinarySearchTree tree;
-	tree.add("5");
-	tree.add("1");
-	tree.add("6");
-	tree.add("3");
-	tree.add("4");
-	tree.add("5");
-	tree.add("2");
-	tree.add("6");
-	tree.add("7");
-	tree.add("8");
-	tree.add("9");
+	tree.add("five");
+	tree.add("one");
+	tree.add("six");
+	tree.add("three");
+	tree.add("four");
+	tree.add("five");
+	tree.add("two");
+	tree.add("six");
+	tree.add("seven");
+	tree.add("eight");
+	tree.add("nine");
 
 	std::cout << "\n" << tree << "\n";
 
-	std::cout << "find(11) - " << tree.find("11") << "\n";
-	std::cout << "find(6) - " << tree.find("6") << "\n";
+	std::cout << "find(eleven) - " << tree.find("eleven") << "\n";
+	std::cout << "find(six) - " << tree.find("six") << "\n";
 
 	std::cout << "countAll() -  " << tree.countAll() << "\n";
 
 	std::cout << "\n";
-	tree.del("7");
-	std::cout << "del(7) " << tree << "\n";
+	tree.del("seven");
+	tree.del("one");
+	tree.del("six");
+	std::cout << "del(seven) " << tree << "\n";
 
 	std::cout << "countAll() -  " << tree.countAll() << "\n";
 

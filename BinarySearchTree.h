@@ -1,7 +1,8 @@
 // двоичное дерево
 
+#include <string>
 #include <istream>
-#include <vector>
+
 
 // элемент дерева
 struct Element {

@@ -153,7 +153,7 @@ void print(std::ostream &os, Element *element, int level, std::string info) {
     if (element != nullptr) {
         for (int i = 0; i < level; i++) os << "    ";
         os << info << " " << element->key << " - " << element->value << std::endl;
-        print(os, element->left, level + 1, "left");
+        print(os, element->left, level + 1, "left:");
         print(os, element->right, level + 1, "right");
     }
 }
@@ -175,7 +175,7 @@ void outLeft(std::ostream &os, Element *element) {
 std::ostream &operator<<(std::ostream &os, const BinarySearchTree &tree) {
     // todo - change
     os << std::endl;
-    print(os, tree.header, 0, "header");
+    print(os, tree.header, 0, "header: ");
 
     os << std::endl;
     outLeft(os, tree.header);
